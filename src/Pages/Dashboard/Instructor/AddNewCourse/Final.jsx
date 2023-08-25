@@ -2,10 +2,10 @@ import { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../../../providers/AuthProvider';
 
+
+// this is finally merged code for add new course section
+
 const Final = () => {
-
-
-
 
     const [newQuizQuestion, setNewQuizQuestion] = useState("");
     const [quizOptions, setQuizOptions] = useState([]);
@@ -23,6 +23,7 @@ const Final = () => {
         updatedOptions.splice(index, 1);
         setQuizOptions(updatedOptions);
     };
+    
 
     const addNewQuiz = () => {
         if (
